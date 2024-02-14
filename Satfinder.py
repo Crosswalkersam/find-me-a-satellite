@@ -46,5 +46,5 @@ for i in tqdm(range(len(sats_all))):
     except:
         failures += 1
 for j in range(len(sats_filtered)):
-    print(str(sats_filtered[j].name) + " Az: " + str(round(sats_filtered[j].azimuth, 1)) + " El:" + str(round(sats_filtered[j].elevation, 1)))
+    print(str(sats_filtered[j].name) + " Az: " + str(round(sats_filtered[j].azimuth, resolution)) + " El:" + str(round(sats_filtered[j].elevation, resolution)))
 print("Checked " + str(len(sats_all) - failures) + " of " + str(len(sats_all)) + " Satellites.")
